@@ -1,0 +1,8 @@
+{
+    "conexion":{
+        "server" : "mysql:host=localhost; dbname=prueba",
+        "user" : "root",
+        "password" : ""
+    }
+}
+
