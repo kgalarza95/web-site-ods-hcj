@@ -38,7 +38,7 @@ class conexion
 
 
 
-    public function getData($sqlstr)
+    public function getDataGeneral($sqlstr)
     {
         $this->conexion->exec("SET CHARACTER SET utf8");
         $resultado = $this->conexion->prepare($sqlstr);
@@ -135,6 +135,29 @@ class conexion
         return $resultArray;
     }
 
-   
+    /*
+    public function noQuery($sqlstr)
+    {
+        $results = $this->conexion->query($sqlstr);
+        return $this->conexion->affected_rows;
+    }
+
+    //solo para insert
+    public function noQueryId($sqlstr)
+    {
+        $results = $this->conexion->query($sqlstr);
+        $filas = $this->conexion->affected_rows;
+        if ($filas >= 1) {
+            return $this->conexion->insert_id;
+        } else {
+            return 0;
+        }
+    }
+
+    //encriptar
+    protected function encriptar($string)
+    {
+        return md5($string);
+    } */
 }
 
