@@ -1,7 +1,7 @@
 <?php
 
 include_once '/config/conexion.php';
-
+error_reporting(0);
 class Usuario extends Conexion
 {
     private $tabla = "login";
