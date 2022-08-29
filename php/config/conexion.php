@@ -22,8 +22,6 @@ class Conexion
             $this->conexion = new PDO($this->servidor, $this->usuario, $this->contrasenia); //
             $this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //
 
-
-
         } catch (Exception $e) {
             die('error en la conexion' . $e->getMessage());
         }
@@ -38,7 +36,7 @@ class Conexion
 
 
 
-    public function getDataGeneral($sqlstr)
+    public function getData($sqlstr)
     {
         $this->conexion->exec("SET CHARACTER SET utf8");
         $resultado = $this->conexion->prepare($sqlstr);
@@ -54,7 +52,7 @@ class Conexion
         return $resultArray;
     }
 
-    public function getDataFirstParams($sqlstr,$Param1)
+    public function getDataFirstParams($sqlstr, $Param1)
     {
         $this->conexion->exec("SET CHARACTER SET utf8");
         $resultado = $this->conexion->prepare($sqlstr);
@@ -70,11 +68,11 @@ class Conexion
         return $resultArray;
     }
 
-    public function getDataSecondParams($sqlstr,$Param1,$Param2)
+    public function getDataSecondParams($sqlstr, $Param1, $Param2)
     {
         $this->conexion->exec("SET CHARACTER SET utf8");
         $resultado = $this->conexion->prepare($sqlstr);
-        $resultado->execute(array($Param1,$Param2));
+        $resultado->execute(array($Param1, $Param2));
 
         $resultArray = array();
         while ($row = $resultado->fetch(PDO::FETCH_ASSOC)) {
@@ -86,11 +84,11 @@ class Conexion
         return $resultArray;
     }
 
-    public function getDataThirdParams($sqlstr,$Param1,$Param2,$Param3)
+    public function getDataThirdParams($sqlstr, $Param1, $Param2, $Param3)
     {
         $this->conexion->exec("SET CHARACTER SET utf8");
         $resultado = $this->conexion->prepare($sqlstr);
-        $resultado->execute(array($Param1,$Param2,$Param3));
+        $resultado->execute(array($Param1, $Param2, $Param3));
 
         $resultArray = array();
         while ($row = $resultado->fetch(PDO::FETCH_ASSOC)) {
@@ -103,11 +101,11 @@ class Conexion
     }
 
 
-    public function getDataFourthParams($sqlstr,$Param1,$Param2,$Param3,$Param4)
+    public function getDataFourthParams($sqlstr, $Param1, $Param2, $Param3, $Param4)
     {
         $this->conexion->exec("SET CHARACTER SET utf8");
         $resultado = $this->conexion->prepare($sqlstr);
-        $resultado->execute(array($Param1,$Param2,$Param3,$Param4));
+        $resultado->execute(array($Param1, $Param2, $Param3, $Param4));
 
         $resultArray = array();
         while ($row = $resultado->fetch(PDO::FETCH_ASSOC)) {
@@ -119,11 +117,11 @@ class Conexion
         return $resultArray;
     }
 
-    public function getDataFifthParams($sqlstr,$Param1,$Param2,$Param3,$Param4,$Param5)
+    public function getDataFifthParams($sqlstr, $Param1, $Param2, $Param3, $Param4, $Param5)
     {
         $this->conexion->exec("SET CHARACTER SET utf8");
         $resultado = $this->conexion->prepare($sqlstr);
-        $resultado->execute(array($Param1,$Param2,$Param3,$Param4,$Param5));
+        $resultado->execute(array($Param1, $Param2, $Param3, $Param4, $Param5));
 
         $resultArray = array();
         while ($row = $resultado->fetch(PDO::FETCH_ASSOC)) {
@@ -135,29 +133,35 @@ class Conexion
         return $resultArray;
     }
 
-    /*
-    public function noQuery($sqlstr)
+
+    public function noQuery($sqlstr, $datosInsersion)
     {
-        $results = $this->conexion->query($sqlstr);
-        return $this->conexion->affected_rows;
+        $resultado = $this->conexion->prepare($sqlstr);
+        $resultado->execute($datosInsersion);
+        return  $resultado->rowCount();
     }
+
+
+
 
     //solo para insert
-    public function noQueryId($sqlstr)
+    public function noQueryId($sqlstr, $datosInsersion)
     {
-        $results = $this->conexion->query($sqlstr);
-        $filas = $this->conexion->affected_rows;
-        if ($filas >= 1) {
-            return $this->conexion->insert_id;
+        $resultado = $this->conexion->prepare($sqlstr);
+        $resultado->execute($datosInsersion);
+        $fila = $resultado->rowCount();
+
+        if ($fila >= 1) {
+            return 1;
         } else {
             return 0;
         }
     }
 
+
     //encriptar
     protected function encriptar($string)
     {
         return md5($string);
-    } */
+    }
 }
-
