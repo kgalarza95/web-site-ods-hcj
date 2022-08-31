@@ -73,17 +73,7 @@
                         <a href="index.html">Inicio</a>
                       </li>
 
-                      <li class="has-children">
-                        <a href="">Importante</a>
-                        <ul class="dropdown arrow-top">
-                          <li><a href="Running.html">1 Fin de la pobreza</a></li>
-                          <li><a href="Running.html">2 Hambre cero</a></li>
-                          <li><a href="Running.html">3 Salud y bienestar</a></li>
-                          <li><a href="Running.html">4 Educación de calidad</a></li>
-                          <li><a href="Running.html">5 Igualdad de género</a></li>
-
-                        </ul>
-                      </li>
+                     
 
                       <li><a href="Servicios.html">Servicios</a></li>
                       <li><a href="Noticias.html">Noticias</a></li>

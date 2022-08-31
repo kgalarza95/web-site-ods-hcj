@@ -66,30 +66,37 @@ function soloLetras(e) {
 
 function ingresarCliente(formId) {
     var myForm = document.forms[formId].getElementsByTagName("input");
-    var acu = 0;
+    var validador = 0;
 
     var div = document.getElementById('nuevoColaborador');
     var data = '';
 
     for (let i = 0; i < myForm.length; i++) {
         if (myForm[i].value == '') {
-            acu += 1;
+            validador += 1;
         }
     }
 
-    console.log(acu)
+    console.log(validador)
 
-    if (acu > 0) {
-        alert('Uno de los campos esta vacio.')
+    if (validador > 0) {
+        alert('Uno de los campos está vacio.')
     } else {
         if (validarEmail(myForm[1].value) == false || validarCell(myForm[2] == false)) {
             alert('Correo inválido.')
         } else {
-            nuevo.push(myForm[0].value)
-            for (var j = 0; j < nuevo.length; j++) {
-                data += '<p class="mb-0"><a href="#">' + nuevo[j] + '</a></p>';
+            console.log('for id '+formId)
+            if(formId === 'registrar'){
+                nuevo.push(myForm[0].value)
+                for (var j = 0; j < nuevo.length; j++) {
+                    data += '<p class="mb-0"><a href="#">' + nuevo[j] + '</a></p>';
+                }
+                div.innerHTML = data;
+            }else{
+                console.log('entra a alert')
+                document.getElementById('div_alerta').style.display = ''; 
             }
-            div.innerHTML = data;
+            
             limpiar(formId);
         }
     }

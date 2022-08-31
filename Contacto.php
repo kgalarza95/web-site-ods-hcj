@@ -72,17 +72,7 @@
                         <a href="index.html">Inicio</a>
                       </li>
 
-                      <li class="has-children">
-                        <a href="">Importante</a>
-                        <ul class="dropdown arrow-top">
-                          <li><a href="Running.html">1 Fin de la pobreza</a></li>
-                          <li><a href="Running.html">2 Hambre cero</a></li>
-                          <li><a href="Running.html">3 Salud y bienestar</a></li>
-                          <li><a href="Running.html">4 Educación de calidad</a></li>
-                          <li><a href="Running.html">5 Igualdad de género</a></li>
-
-                        </ul>
-                      </li>
+                   
 
                       <li><a href="Servicios.html">Servicios</a></li>
                       <li><a href="Noticias.html">Noticias</a></li>
@@ -172,9 +162,11 @@
                 </div>
               </div>
 
+
+
               <div class="row form-group">
                 <div class="col-md-12">
-                  <button type="submit" class="btn btn-primary pill px-4 py-2"
+                  <button type="button" class="btn btn-primary pill px-4 py-2"
                     onclick='ingresarCliente("contacto")'>Enviar</button>
                 </div>
               </div>
@@ -187,7 +179,8 @@
             <div class="p-4 mb-3 bg-white">
               <h3 class="h5 letra-negra mb-3">Informacion de Contacto</h3>
               <p class="mb-0 font-weight-bold">Direccion</p>
-              <p class="mb-4">Guayaquil - Alborada 6ta etapa, diagonal al Rc Norte</p>
+              <p class="mb-4">Victor Manuel Rendón,
+                Guayaquil 090313</p>
 
               <p class="mb-0 font-weight-bold">Telefono</p>
               <p class="mb-4"><a href="#">+593 985396241</a></p>
