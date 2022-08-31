@@ -7,85 +7,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icono.png">
-   
+
     <link rel="stylesheet" href="fonts/icomoon/style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
-    </head>
+</head>
 
 <body>
     <section class="contenido">
 
-        <!-- cabecera-- -->
-        <div class="barra-cab bg-white">
-            <div class="barra-superior">
-                <div class="container py-2">
-                    <div class="row align-items-center">
-                        <div class="col-6">
-                            <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span
-                                    class="icon-twitter"></span></a>
-                            <a href="https://www.facebook.com/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
-                            <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span
-                                    class="icon-linkedin"></span></a>
-                            <a href="https://www.instagram.com/" class="p-2 pl-0"><span
-                                    class="icon-instagram"></span></a>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-flex ml-auto">
-                                <a href="#" class="d-flex align-items-center ml-auto mr-4">
-                                    <span class="icon-envelope mr-2"></span>
-                                    <span class="d-none d-md-inline-block">correo.ug.cambiar@ug.edu.ec</span>
-                                </a>
-                                <a href="tel://0985396241" class="d-flex align-items-center">
-                                    <span class="icon-phone mr-2"></span>
-                                    <span class="d-none d-md-inline-block">0985396241</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include('includes/cabecera.php') ?>
 
-        <div class="barra-cab bg-white">
-            <div class="container">
-                <div class="barra-menu bg-light">
-                    <div class="py-1">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <h2 class="mb-0 logo-texto">
-                                    <a href="#"><strong> ODS</strong> </a>
-                                </h2>
-                            </div>
-
-                            <div class="col-10">
-                                <nav class="nav-menu-opciones text-right">
-                                    <div class="container">
-                                        <ul class="lista-opciones">
-                                            <li class="active">
-                                                <a href="index.html">Inicio</a>
-                                            </li>
-
-                                            
-
-                                            <li><a href="Servicios.html">Servicios</a></li>
-                                            <li><a href="Noticias.html">Noticias</a></li>
-                                            <li><a href="Nosotros.html">Nosotros</a></li>
-                                            <li><a href="Contacto.html">Contacto</a></li>
-                                            <li><a href="Registrar.html">Registrarse</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--fin de  cabecera-- -->
+      
 
         <!-- carrusel de imagenes -->
         <div id="crr_imagenes" class="carousel slide" data-ride="carousel">
@@ -142,7 +77,7 @@
                             sociedad son necesarios para alcanzar los ODS en todos los contextos.
                         </p>
                         <p>
-                            <a href="informacion.html" class="btn btn-primary pill px-4">Leer Mas</a>
+                            <a href="informacion.php" class="btn btn-primary pill px-4">Leer Mas</a>
                         </p>
                     </div>
                     <div class="col-md-6 col-lg-6 ml-auto">
@@ -159,7 +94,7 @@
 
                 <article class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/1pobreza.html">
+                        <a href="paginas/1pobreza.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-baby display-4"></i>
@@ -176,7 +111,7 @@
 
                 <article class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/2hambre.html">
+                        <a href="paginas/2hambre.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fab fa-apple display-4"></i>
@@ -193,7 +128,7 @@
 
                 <article class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/3salud.html">
+                        <a href="paginas/3salud.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-ambulance display-4"></i>
@@ -210,7 +145,7 @@
 
                 <article class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/4educacion.html">
+                        <a href="paginas/4educacion.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-book display-4"></i>
@@ -226,7 +161,7 @@
 
                 <article class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/5igualdad.html">
+                        <a href="paginas/5igualdad.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-venus-mars display-4"></i>
@@ -243,7 +178,7 @@
 
                 <article class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/6agua.html">
+                        <a href="paginas/6agua.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-water display-4"></i>
@@ -259,7 +194,7 @@
 
                 <article class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/7energia.html">
+                        <a href="paginas/7energia.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-charging-station display-4"></i>
@@ -275,7 +210,7 @@
 
                 <articlearticle class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/8trabajo.html">
+                        <a href="paginas/8trabajo.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-briefcase display-4"></i>
@@ -292,7 +227,7 @@
 
                 <articlearticle class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/9industria.html">
+                        <a href="paginas/9industria.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="far fa-building display-4"></i>
@@ -308,7 +243,7 @@
 
                 <articlearticle class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/10reduccion.html">
+                        <a href="paginas/10reduccion.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fab fa-slideshare display-4"></i>
@@ -321,7 +256,7 @@
 
                 <articlearticle class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/11ciudades.html">
+                        <a href="paginas/11ciudades.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-city display-4"></i>
@@ -337,7 +272,7 @@
 
                 <articlearticle class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/12produccion.html">
+                        <a href="paginas/12produccion.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-comment-dollar display-4"></i>
@@ -353,7 +288,7 @@
 
                 <articlearticle class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/13accion.html">
+                        <a href="paginas/13accion.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-user-check display-4"></i>
@@ -369,7 +304,7 @@
 
                 <article class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/14submarina.html">
+                        <a href="paginas/14submarina.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-ship display-4"></i>
@@ -385,7 +320,7 @@
 
                 <article class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/15terrestre.html">
+                        <a href="paginas/15terrestre.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-spa display-4"></i>
@@ -402,7 +337,7 @@
 
                 <article class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/16paz.html">
+                        <a href="paginas/16paz.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-praying-hands display-4"></i>
@@ -418,7 +353,7 @@
 
                 <article class="col-md-6 col-lg-3">
                     <div class="w-100 h-100 block-feature p-5 bg-light">
-                        <a href="paginas/17alianzas.html">
+                        <a href="paginas/17alianzas.php">
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <span class="d-block mb-3">
                                 <i class="fas fa-balance-scale display-4"></i>
@@ -452,14 +387,10 @@
                                     físicas
                                 </p>
                                 <p>
-                                    <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span
-                                            class="icon-twitter"></span></a>
-                                    <a href="https://www.facebook.com/" class="p-2 pl-0"><span
-                                            class="icon-facebook"></span></a>
-                                    <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span
-                                            class="icon-linkedin"></span></a>
-                                    <a href="https://www.instagram.com/" class="p-2 pl-0"><span
-                                            class="icon-instagram"></span></a>
+                                    <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                                    <a href="https://www.facebook.com/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                                    <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                                    <a href="https://www.instagram.com/" class="p-2 pl-0"><span class="icon-instagram"></span></a>
                                 </p>
                             </div>
                         </div>
@@ -474,14 +405,10 @@
                                     físicas
                                 </p>
                                 <p>
-                                    <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span
-                                            class="icon-twitter"></span></a>
-                                    <a href="https://www.facebook.com/" class="p-2 pl-0"><span
-                                            class="icon-facebook"></span></a>
-                                    <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span
-                                            class="icon-linkedin"></span></a>
-                                    <a href="https://www.instagram.com/" class="p-2 pl-0"><span
-                                            class="icon-instagram"></span></a>
+                                    <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                                    <a href="https://www.facebook.com/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                                    <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                                    <a href="https://www.instagram.com/" class="p-2 pl-0"><span class="icon-instagram"></span></a>
                                 </p>
                             </div>
                         </div>
@@ -497,14 +424,10 @@
                                     físicas
                                 </p>
                                 <p>
-                                    <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span
-                                            class="icon-twitter"></span></a>
-                                    <a href="https://www.facebook.com/" class="p-2 pl-0"><span
-                                            class="icon-facebook"></span></a>
-                                    <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span
-                                            class="icon-linkedin"></span></a>
-                                    <a href="https://www.instagram.com/" class="p-2 pl-0"><span
-                                            class="icon-instagram"></span></a>
+                                    <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                                    <a href="https://www.facebook.com/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                                    <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                                    <a href="https://www.instagram.com/" class="p-2 pl-0"><span class="icon-instagram"></span></a>
                                 </p>
                             </div>
                         </div>
@@ -519,14 +442,10 @@
                                     físicas
                                 </p>
                                 <p>
-                                    <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span
-                                            class="icon-twitter"></span></a>
-                                    <a href="https://www.facebook.com/" class="p-2 pl-0"><span
-                                            class="icon-facebook"></span></a>
-                                    <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span
-                                            class="icon-linkedin"></span></a>
-                                    <a href="https://www.instagram.com/" class="p-2 pl-0"><span
-                                            class="icon-instagram"></span></a>
+                                    <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                                    <a href="https://www.facebook.com/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                                    <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                                    <a href="https://www.instagram.com/" class="p-2 pl-0"><span class="icon-instagram"></span></a>
                                 </p>
                             </div>
                         </div>
@@ -541,14 +460,10 @@
                                     físicas
                                 </p>
                                 <p>
-                                    <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span
-                                            class="icon-twitter"></span></a>
-                                    <a href="https://www.facebook.com/" class="p-2 pl-0"><span
-                                            class="icon-facebook"></span></a>
-                                    <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span
-                                            class="icon-linkedin"></span></a>
-                                    <a href="https://www.instagram.com/" class="p-2 pl-0"><span
-                                            class="icon-instagram"></span></a>
+                                    <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                                    <a href="https://www.facebook.com/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                                    <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                                    <a href="https://www.instagram.com/" class="p-2 pl-0"><span class="icon-instagram"></span></a>
                                 </p>
                             </div>
                         </div>
@@ -577,15 +492,15 @@
                                 resiliencia climática y ante desastres.
                             </p>
                             <p>
-                                <a href="Nosotros.html" class="btn btn-primary pill text-white px-4">Leer Mas</a>
+                                <a href="Nosotros.php" class="btn btn-primary pill text-white px-4">Leer Mas</a>
                             </p>
                         </div>
                         <div class="col-6 col-md-4 col-lg-4 mb-5 mb-lg-0">
                             <h3 class="encabezado-de-pie mb-4 text-primary">Menu</h3>
                             <ul class="list-unstyled">
-                                <li><a href="Servicios.html">Servicios</a></li>
-                                <li><a href="Noticias.html">Noticias</a></li>
-                                <li><a href="Contacto.html">Contacto</a></li>
+                                <li><a href="Servicios.php">Servicios</a></li>
+                                <li><a href="Noticias.php">Noticias</a></li>
+                                <li><a href="Contacto.php">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
@@ -625,14 +540,10 @@
                         </div>
                         <div class="col-md-12">
                             <p>
-                                <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span
-                                        class="icon-twitter"></span></a>
-                                <a href="https://www.facebook.com/" class="p-2 pl-0"><span
-                                        class="icon-facebook"></span></a>
-                                <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span
-                                        class="icon-linkedin"></span></a>
-                                <a href="https://www.instagram.com/" class="p-2 pl-0"><span
-                                        class="icon-instagram"></span></a>
+                                <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                                <a href="https://www.facebook.com/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                                <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                                <a href="https://www.instagram.com/" class="p-2 pl-0"><span class="icon-instagram"></span></a>
                             </p>
                         </div>
                     </div>

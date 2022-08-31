@@ -17,81 +17,7 @@
 
 
   <div class="contenido">
-    <!-- cabecera-- -->
-    <div class="barra-cab bg-white">
-      <div class="barra-superior">
-
-
-        <div class="container py-2">
-          <div class="row align-items-center">
-            <div class="col-6">
-              <a href="https://twitter.com/home?lang=es" class="p-2 pl-0"><span class="icon-twitter"></span></a>
-              <a href="https://www.facebook.com/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
-              <a href="https://www.linkedin.com/login/es" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
-              <a href="https://www.instagram.com/" class="p-2 pl-0"><span class="icon-instagram"></span></a>
-            </div>
-            <div class="col-6">
-              <div class="d-flex ml-auto">
-                <a href="#" class="d-flex align-items-center ml-auto mr-4">
-                  <span class="icon-envelope mr-2"></span>
-                  <span class="d-none d-md-inline-block">correo.ug.cambiar@ug.edu.ec</span>
-                </a>
-                <a href="tel://0985396241" class="d-flex align-items-center">
-                  <span class="icon-phone mr-2"></span>
-                  <span class="d-none d-md-inline-block">0985396241</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-
-
-    <div class="barra-cab bg-white">
-      <div class="container">
-        <div class="barra-menu bg-light">
-          <div class="py-1">
-            <div class="row align-items-center">
-
-              <div class="col-2">
-                <h2 class="mb-0 logo-texto">
-                  <a href="#"><strong> ODS</strong> </a>
-                </h2>
-              </div>
-
-              <div class="col-10">
-
-                <nav class="nav-menu-opciones text-right">
-                  <div class="container">
-
-                    <ul class="lista-opciones ">
-
-                      <li class="active">
-                        <a href="index.html">Inicio</a>
-                      </li>
-
-                     
-
-                      <li><a href="Servicios.html">Servicios</a></li>
-                      <li><a href="Noticias.html">Noticias</a></li>
-                      <li><a href="Nosotros.html">Nosotros</a></li>
-                      <li><a href="Contacto.html">Contacto</a></li>
-                      <li><a href="Registrar.html">Registrarse</a></li>
-                    </ul>
-
-
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--fin de  cabecera-- -->
+  <?php include('includes/cabecera.php') ?>
 
     <div id="crr_imagenes" class="carousel slide" data-ride="carousel">
 
@@ -146,7 +72,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/1pobreza.html">
+            <a href="paginas/1pobreza.php">
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-01.jpg" class="img-fluid">
               </div>
@@ -156,7 +82,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/2hambre.html">
+            <a href="paginas/2hambre.php">
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-02.jpg" class="img-fluid">
               </div>
@@ -166,7 +92,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/3salud.html">
+            <a href="paginas/3salud.php">
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-03.jpg" class="img-fluid">
               </div>
@@ -176,7 +102,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/4educacion.html">
+            <a href="paginas/4educacion.php">
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-04.jpg" class="img-fluid">
               </div>
@@ -186,7 +112,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/5igualdad.html">
+            <a href="paginas/5igualdad.php">
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-05.jpg" class="img-fluid">
               </div>
@@ -199,7 +125,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/6agua.html">
+            <a href="paginas/6agua.php">
 
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-06.jpg" class="img-fluid">
@@ -212,7 +138,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/7energia.html">
+            <a href="paginas/7energia.php">
 
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-07.jpg" class="img-fluid">
@@ -225,7 +151,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/8trabajo.html">
+            <a href="paginas/8trabajo.php">
 
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-08.jpg" class="img-fluid">
@@ -238,7 +164,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/9industria.html">
+            <a href="paginas/9industria.php">
 
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-09.jpg" class="img-fluid">
@@ -252,7 +178,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/10reduccion.html">
+            <a href="paginas/10reduccion.php">
 
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-10-1-300x300.jpg" class="img-fluid">
@@ -266,7 +192,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/11ciudades.html">
+            <a href="paginas/11ciudades.php">
 
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-11.jpg" class="img-fluid">
@@ -279,7 +205,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/12produccion.html">
+            <a href="paginas/12produccion.php">
 
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-12.jpg" class="img-fluid">
@@ -292,7 +218,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/13accion.html">
+            <a href="paginas/13accion.php">
 
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-13.jpg" class="img-fluid">
@@ -305,7 +231,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/14submarina.html">
+            <a href="paginas/14submarina.php">
 
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-14.jpg" class="img-fluid">
@@ -318,7 +244,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/15terrestre.html">
+            <a href="paginas/15terrestre.php">
 
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-15.jpg" class="img-fluid">
@@ -332,7 +258,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/16paz.html">
+            <a href="paginas/16paz.php">
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-16.jpg" class="img-fluid">
               </div>
@@ -343,7 +269,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-white">
-            <a href="paginas/17alianzas.html">
+            <a href="paginas/17alianzas.php">
               <div class="image">
                 <img src="images/servicios/S_SDG_Icons-01-17.jpg" class="img-fluid">
               </div>
@@ -383,15 +309,15 @@
                 resiliencia climática y ante desastres.
               </p>
               <p>
-                <a href="Nosotros.html" class="btn btn-primary pill text-white px-4">Leer Mas</a>
+                <a href="Nosotros.php" class="btn btn-primary pill text-white px-4">Leer Mas</a>
               </p>
             </div>
             <div class="col-6 col-md-4 col-lg-4 mb-5 mb-lg-0">
               <h3 class="encabezado-de-pie mb-4 text-primary">Menu</h3>
               <ul class="list-unstyled">
-                <li><a href="Servicios.html">Servicios</a></li>
-                <li><a href="Noticias.html">Noticias</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Servicios.php">Servicios</a></li>
+                <li><a href="Noticias.php">Noticias</a></li>
+                <li><a href="Contacto.php">Contacto</a></li>
               </ul>
             </div>
           </div>
