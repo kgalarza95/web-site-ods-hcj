@@ -1,6 +1,6 @@
 {
     "conexion":{
-        "server" : "mysql:host=localhost; dbname=prueba",
+        "server" : "mysql:host=localhost; dbname=ug_base_php",
         "user" : "root",
         "password" : ""
     }
