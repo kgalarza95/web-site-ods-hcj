@@ -1,7 +1,7 @@
 <?php
 
-include 'php/config/conexion.php';
-include 'php/model/usuarios.php';
+include ('php/config/conexion.php');
+include ('php/model/usuarios.php');
 
 $usuario = new Usuario();
 $data = $usuario->listarUsuario();

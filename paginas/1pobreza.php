@@ -1,3 +1,6 @@
+<?php
+	include "../php/sesion2.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 

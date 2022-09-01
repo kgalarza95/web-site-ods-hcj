@@ -1,3 +1,6 @@
+<?php
+	include "../php/sesion2.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +22,7 @@
 
 <body>
 
-  <section class="contenido">
+  <sectiosn class="contenido">
   <?php include('../includes/cabecera2.php') ?>
 
 

@@ -53,6 +53,7 @@
                                        <li><a href="Nosotros.php">Nosotros</a></li>
                                        <li><a href="Contacto.php">Contacto</a></li>
                                        <li><a href="Registrar.php">Registrarse</a></li>
+                                       <li><a href="login.php">Cerrar Sesión</a></li>
                                    </ul>
                                </div>
                            </nav>
