@@ -16,7 +16,7 @@ var colaboradores = [
 for (var i = 0; i < colaboradores.length; i++) {
     data += '<p class="mb-0"><a href="#">' + colaboradores[i] + '</a></p>';
 }
-div.innerHTML = data;
+//div.innerHTML = data;
 
 function validarEmail(email) {
     expresion = /\w+@\w+\.+[a-z]/;
@@ -94,7 +94,7 @@ function ingresarCliente(formId) {
                 div.innerHTML = data;
             }else{
                 console.log('entra a alert')
-                document.getElementById('div_alerta').style.display = ''; 
+                //document.getElementById('div_alerta').style.display = ''; 
             }
             
             limpiar(formId);
