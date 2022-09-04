@@ -1,17 +1,26 @@
 <?php
 
-if ($_POST) {
-  $nombre = $_POST['nombre'];
-  print($nombre);
+require_once "../model/contacto.class.php";
+require_once "../config/conexion.php";
+require_once "../config/respuesta.class.php";
 
- // $nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$telefono = $_POST['telefono'];
-//$mensaje = $_POST['mensaje'];
+$_respuestas = new respuestas;
+$_contacto = new Contacto;
 
-//print($nombre . " " . $email . " " . $telefono . " " . $mensaje);
-/* if ($_POST) {
-    $datos = array($_POST['nombre'], $_POST['email'], $_POST['telefono'], $_POST['mensaje']);
-    var_dump($datos);
-} */
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  #recibir los datos enviados
+  $postBody = file_get_contents("php://input");
+  #enviamos los datos al manejador
+  $datosArray = $_contacto->post($postBody);
+
+  //devolvemos una respuestas
+  header('Content-Type: application/json');
+  if (isset($datosArray["result"]["error_id"])) {
+    $responseCode = $datosArray["result"]["error_id"];
+    http_response_code($responseCode);
+  } else {
+    http_response_code(200);
+  }
+  echo json_encode($datosArray);
 }

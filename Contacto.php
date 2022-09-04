@@ -61,25 +61,25 @@ include "php/sesion.php";
 
 
 
-            <form action="php/controller/contacto.php"  method="POST" class="p-5 bg-white" id='contacto'>
+            <form action="#" method="POST" class="p-5 bg-white">
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="font-weight-bold" for="nombre">Nombre</label>
-                  <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" onkeypress='return soloLetras(event)'>
+                  <input type="text" name="nombre" class="form-control" placeholder="Nombre">
                 </div>
               </div>
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="font-weight-bold" for="email">Email</label>
-                  <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Email">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="font-weight-bold" for="telefono">Telefono</label>
-                  <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Telefono" onkeypress=' return soloNumeros(event)'>
+                  <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Telefono" maxlength="15s">
                 </div>
               </div>
 
@@ -94,7 +94,7 @@ include "php/sesion.php";
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <button type="submit" class="btn btn-primary pill px-4 py-2" onclick='ingresarCliente("contacto")'>Enviar</button>
+                  <button type="submit" class="btn btn-primary pill px-4 py-2" id="btn-enviar">Enviar</button>
                 </div>
               </div>
 
@@ -205,21 +205,11 @@ include "php/sesion.php";
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
       <script src="js/form.js"></script>
+      <script src="js/eventos/contactanos.js"></script>
     </footer>
 
 </body>
 
 </html>
 
-<?php
-
-
-//$datos = array($_POST['nombre'],$_POST['email'],$_POST['telefono'],$_POST['mensaje']);
-//var_dump($datos);
-
-/*  if (isset($_POST['']) && isset($_POST['password'])) {
-              require_once "php/config/conexion.php";
-              require_once "php/login.php";
-          } */
-?>
 </div>
