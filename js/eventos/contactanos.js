@@ -1,5 +1,10 @@
-
 const btnEnviar = document.getElementById('btn-enviar');
+
+telefono.addEventListener('click', (e) => {
+
+})
+
+
 btnEnviar.addEventListener('click', async (e) => {
     e.preventDefault();
 
@@ -7,9 +12,6 @@ btnEnviar.addEventListener('click', async (e) => {
     const email = document.getElementsByName('email')[0].value;
     const telefono = document.getElementsByName('telefono')[0].value;
     const mensaje = document.getElementsByName('mensaje')[0].value;
-
-    alert(nombre + ' ' + email + ' ' + telefono + ' ' + mensaje); //
-    console.log(JSON.stringify({ nombre, email, telefono, mensaje }));
 
     url = 'http://localhost/web-site-ods-hcj/php/controller/contacto.php';
 
@@ -19,10 +21,18 @@ btnEnviar.addEventListener('click', async (e) => {
             'accept': 'application/json ',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({nombre, email, telefono, mensaje })
+        body: JSON.stringify({ nombre, email, telefono, mensaje })
     });
 
     if (data.status == 200) {
         alert('exito al guardar')
+
+        document.getElementById('nombre').value = "";
+        document.getElementById('email').value = "";
+        document.getElementById('telefono').value = "";
+        document.getElementById('mensaje').value = "";
+
+    } else {
+        alert(' error al guardar');
     }
 });

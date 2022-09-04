@@ -4,7 +4,7 @@ require_once '../config/conexion.php';
 
 class Contacto extends conexion
 {
-    private $tabla = "contacto";
+    private $tabla = "TBL_CONTACTO";
 
     private $id = "";
     private $nombre = "";
