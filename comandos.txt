@@ -12,3 +12,13 @@ git push -u origin "main"
 
 
 
+##ver rama actual
+git branch 
+##crear rama
+git branch nombre_rama
+##ver todas las ramas
+git branch --list
+##eliminar una rama
+git branch -d nombre_rama
+##ver todas las ramas locales y remotas
+git branch -a
