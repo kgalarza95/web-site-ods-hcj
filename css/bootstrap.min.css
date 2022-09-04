@@ -3057,7 +3057,7 @@ input[type="submit"].btn-block {
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: #570358;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -3171,16 +3171,17 @@ input[type="submit"].btn-block {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+  background-color: #570358;
 }
 .dropdown-item:focus,
 .dropdown-item:hover {
   color: #16181b;
   text-decoration: none;
-  background-color: #f8f9fa;
+  background-color: #f8f9fa48;
 }
 .dropdown-item.active,
 .dropdown-item:active {
-  color: #fff;
+  color: #16181b;
   text-decoration: none;
   background-color: #570358;
 }

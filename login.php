@@ -22,6 +22,12 @@ session_destroy();
 </head>
 
 <body>
+    <?php
+    $usuario = "";
+    if (isset($_COOKIE['username'])) {
+        $usuario = $_COOKIE['nombre'];
+    }
+    ?>
     <form action="" class="p-5 bg-white" id='registrar' method="POST">
         <div style='margin-left:25%; '>
             <h1><b>SISTEMA PARCIAL 2 - UG</b></h1>
@@ -29,27 +35,24 @@ session_destroy();
             <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <label class="font-weight-bold" for="username">Usuario</label>
-                    <input type="text" 
-                    id="username" 
-                    name="username"
-                    class="form-control" placeholder="Usuario">
+                    <input type="text" id="username" 
+                    name="username" 
+                    class="form-control" 
+                    placeholder="Usuario"
+                    value=" <?php echo $usuario; ?> ">
                 </div>
             </div>
 
             <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <label class="font-weight-bold" for="password">Contraseña</label>
-                    <input type="password" 
-                    id="password" 
-                    name="password"
-                    class="form-control" 
-                    placeholder="Contraseña">
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña">
                 </div>
             </div>
 
             <div c lass="row form-group">
                 <div class="col-md-12">
-                <button type="submit" class="btn btn-primary pill px-4 py-2">Iniciar Sesión</button> 
+                    <button type="submit" class="btn btn-primary pill px-4 py-2">Iniciar Sesión</button>
                     <!-- <input type="submit" value="Ingresar"> -->
                     <!-- <button type="submit" class="btn btn-primary pill px-4 py-2" onclick='login()'>Iniciar Sesión</button> -->
                 </div>

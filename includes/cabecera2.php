@@ -33,7 +33,27 @@
                    <div class="row align-items-center">
                        <div class="col-2">
                            <h2 class="mb-0 logo-texto">
-                               <a href="#"><strong> ODS</strong> </a>
+                               <!-- <a href="#"><strong> ODS</strong> </a> -->
+                               <div class="dropdown">
+                                <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    ☰
+                                </a>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Pagina #1</a>
+                                    <a class="dropdown-item" href="#">Pagina #2 </a>
+                                    <a class="dropdown-item" href="#">Pagina #3 </a>
+                                    <a class="dropdown-item" href="#">Pagina #4 </a>
+                                    <a class="dropdown-item" href="#">Pagina #5 </a>
+                                    <a class="dropdown-item" href="#">Pagina #6 </a>
+                                    <a class="dropdown-item" href="#">Pagina #7 </a>
+                                    <a class="dropdown-item" href="#">Pagina #8 </a>
+                                    <a class="dropdown-item" href="#">Pagina #9 </a>
+                                    <a class="dropdown-item" href="#">Pagina #10</a>
+                                    <a class="dropdown-item" href="#">Pagina #11</a>
+                                    <a class="dropdown-item" href="#">Pagina #12</a>
+                                </div>
+                            </div>
                            </h2>
                        </div>
 
