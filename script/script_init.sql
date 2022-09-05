@@ -382,3 +382,18 @@ JOIN TBL_ODS O ON O.ID = A.ODS;
 
 
 
+
+/*********************************************/
+
+
+CREATE TABLE tbl_clientes(
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(200),
+  email VARCHAR(150),
+  telefono VARCHAR(15)
+  PRIMARY KEY (ID)
+);
+
+
+
+

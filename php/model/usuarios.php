@@ -28,16 +28,16 @@ class Usuario extends Conexion
 
 
     /* guardar*/
-    public function InsertUsuario($datos)
+    public function InsertUsuario($json)
     {
 
-
-        if (!isset($datos[0]) || !isset($datos[1]) || !isset($datos[2])) {
-            return "error";
+        $_respuestas = new respuestas;
+        $datos = json_decode($json, true);
+        if (!isset($datos['usuario']) || !isset('contrasenia')) {
+            return $_respuestas->error_400();
         } else {
-            $this->id = $datos[0];
-            $this->usuario = $datos[1];
-            $this->contrasenia = $datos[2];
+            $this->usuario = $datos['usuario'];
+            $this->contrasenia = $datos['contrasenia'];
 
             $this->insertarUsuario();
         }
@@ -47,9 +47,9 @@ class Usuario extends Conexion
 
     private function insertarUsuario()
     {
-        $sql = "INSERT INTO $this->tabla(id_usuario, usuario, contrasenia) VALUES (:id, :usuario, :contrasenia)";
+        $sql = "INSERT INTO $this->tabla(usuario, contrasenia) VALUES (:id, :usuario, :contrasenia)";
 
-        $datosInsert = array(':id' => $this->id, ':usuario' => $this->usuario, ':contrasenia' => $this->contrasenia);
+        $datosInsert = array(':usuario' => $this->usuario, ':contrasenia' => $this->contrasenia);
 
         $resp = parent::noQueryId($sql, $datosInsert);
 

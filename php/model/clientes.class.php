@@ -2,17 +2,42 @@
 
 require_once '../config/conexion.php';
 
-class Contacto extends conexion
+class Clientes extends conexion
 {
-    private $tabla = "TBL_CONTACTO";
+    private $tabla = "tbl_clientes";
 
     private $id = "";
     private $nombre = "";
     private $email = "";
     private $telefono = "";
-    private $mensaje = "";
-    
-   
+
+
+    public function listarCliente($pagina = 1)
+    {
+        $inicio = 0;
+        $cantidad = 100;
+
+        if ($pagina > 1) {
+            $inicio = $cantidad * ($pagina - 1) + 1;
+            $cantidad = $cantidad * $pagina;
+        }
+
+        $query = "select * from $this->tabla limit $inicio,$cantidad";
+        //print_r($query);
+        $datos = parent::getData($query);
+        return $datos;
+    }
+
+    public function obtenerCliente($id)
+    {
+        $query = "select * from $this->tabla where ID  = $id";
+        return $datos = parent::getData($query);
+    }
+
+
+    /*********************************************** */
+
+
     public function post($json)
     {
         $_respuestas = new respuestas;
@@ -23,7 +48,6 @@ class Contacto extends conexion
             $this->nombre = $datos['nombre'];
             $this->email = $datos['email'];
             $this->telefono = $datos['telefono'];
-            $this->mensaje = $datos['mensaje'];
 
             $resp = $this->insertarContacto();
 
@@ -43,11 +67,11 @@ class Contacto extends conexion
 
     private function insertarContacto()
     {
-        $query = "INSERT INTO $this->tabla(NOMBRES, EMAIL, TELEFONO, MENSAJE) VALUES (:nombre, :email, :telefono, :mensaje)";
+        $query = "INSERT INTO $this->tabla(NOMBRE, EMAIL, TELEFONO) VALUES (:nombre, :email, :telefono)";
 
 
-        
-        $datosInsert = array(':nombre'=> $this->nombre, ':email'=> $this->email, ':telefono'=> $this->telefono, ':mensaje'=> $this->mensaje);
+
+        $datosInsert = array(':nombre' => $this->nombre, ':email' => $this->email, ':telefono' => $this->telefono);
 
         $resp = parent::noQueryId($query, $datosInsert);
 
@@ -57,5 +81,4 @@ class Contacto extends conexion
             return 0;
         }
     }
-
 }
