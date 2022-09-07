@@ -2350,6 +2350,7 @@ VALUES
     13
   );
 
+<<<<<<< HEAD
 INSERT INTO
   TBL_Ambito_VAR_Flow_ODS(Codigo, Ambito_VAR_Flow, ODS)
 VALUES
@@ -2367,6 +2368,46 @@ VALUES
     'Inversión en Gestión de residuos en €',
     12
   );
+=======
+/*********************************************/
+
+
+CREATE TABLE tbl_clientes(
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(200),
+  email VARCHAR(150),
+  telefono VARCHAR(15),
+  PRIMARY KEY (ID)
+);
+
+CREATE TABLE TBL_SUSCRIPCION(
+  ID INT(11) NOT NULL AUTO_INCREMENT,
+  NOMBRES   VARCHAR(100),
+  APELLIDOS VARCHAR(100),
+  CORREO    VARCHAR(150),
+  DIRECCION VARCHAR(150),
+  SEXO     CHAR(1),
+  PAIS VARCHAR(150),
+  ES_ENERGETICO CHAR(1),
+  ES_ODS CHAR(1),
+  TIPO_SUSCRICION CHAR(1),
+  PRIMARY KEY (ID)
+);
+
+insert into tbl_suscripcion(NOMBRES,APELLIDOS,  CORREO) values("kevin","galarza","vera");
+select * from tbl_suscripcion;
+/*
+SET SQL_SAFE_UPDATES = 0;
+delete from tbl_suscripcion where NOMBRES = 'kevin';
+*/
+
+SELECT * FROM TBL_CONTACTO;
+SELECT * FROM TBL_PAIS;
+SELECT * FROM TBL_ODS;
+SELECT * FROM TBL_USUARIO;
+SELECT * FROM TBL_Ambito_VAR_Flow_ODS;
+SELECT * FROM tbl_clientes;
+>>>>>>> f62fa8b8600d3b8cd231deab6b6476254d4c869c
 
 INSERT INTO
   TBL_Ambito_VAR_Flow_ODS(Codigo, Ambito_VAR_Flow, ODS)
@@ -2714,6 +2755,7 @@ FROM
   TBL_Ambito_VAR_Flow_ODS A
   JOIN TBL_ODS O ON O.ID = A.ODS;
 
+<<<<<<< HEAD
 /*********************************************/
 CREATE TABLE tbl_clientes(
   id INT(11) NOT NULL AUTO_INCREMENT,
@@ -2722,6 +2764,9 @@ CREATE TABLE tbl_clientes(
   telefono VARCHAR(15),
   PRIMARY KEY (ID)
 );
+=======
+
+>>>>>>> f62fa8b8600d3b8cd231deab6b6476254d4c869c
 
 CREATE TABLE TBL_ESTUDIANTES(
   ID INT(11) NOT NULL AUTO_INCREMENT,

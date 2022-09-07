@@ -43,13 +43,13 @@
                                     <a class="dropdown-item" href="#">Pagina #1</a>
                                     <a class="dropdown-item" href="#">Pagina #2 </a>
                                     <a class="dropdown-item" href="#">Pagina #3 </a>
-                                    <a class="dropdown-item" href="#">Pagina #4 </a>
+                                    <a class="dropdown-item" href="../Contacto.php">Pagina #4-Contacto</a>
                                     <a class="dropdown-item" href="#">Pagina #5 </a>
                                     <a class="dropdown-item" href="#">Pagina #6 </a>
                                     <a class="dropdown-item" href="#">Pagina #7 </a>
-                                    <a class="dropdown-item" href="#">Pagina #8 </a>
-                                    <a class="dropdown-item" href="#">Pagina #9 </a>
-                                    <a class="dropdown-item" href="#">Pagina #10</a>
+                                    <a class="dropdown-item" href="8suscripcion.php">Pagina #8-Suscripción</a>
+                                    <a class="dropdown-item" href="../Servicios.php">Pagina #9-Las ODS</a>
+                                    <a class="dropdown-item" href="../informacion.php">Pagina #10-Información</a>
                                     <a class="dropdown-item" href="#">Pagina #11</a>
                                     <a class="dropdown-item" href="#">Pagina #12</a>
                                 </div>

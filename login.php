@@ -39,7 +39,7 @@ session_destroy();
                     name="username" 
                     class="form-control" 
                     placeholder="Usuario"
-                    value=" <?php echo $usuario; ?> ">
+                    value="<?php echo $usuario; ?>">
                 </div>
             </div>
 

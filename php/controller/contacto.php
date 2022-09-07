@@ -7,6 +7,7 @@ require_once "../config/respuesta.class.php";
 $_respuestas = new respuestas;
 $_contacto = new Contacto;
 
+echo "llega al php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   #recibir los datos enviados
