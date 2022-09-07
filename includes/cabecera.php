@@ -40,7 +40,7 @@
                                 </a>
 
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Pagina #1</a>
+                                    <a class="dropdown-item" href="http://localhost/web-site-ods-hcj/paginas/pagina1.php">Pagina #1</a>
                                     <a class="dropdown-item" href="#">Pagina #2 </a>
                                     <a class="dropdown-item" href="#">Pagina #3 </a>
                                     <a class="dropdown-item" href="#">Pagina #4 </a>

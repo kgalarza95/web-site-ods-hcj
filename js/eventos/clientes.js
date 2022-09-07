@@ -49,7 +49,7 @@ const getData = async () => {
 const renderData = (datos) => {
     for (let data of datos) {
         colaboradoresx.innerHTML += `<div class="list-group" id="listaColasborador">                                    
-                                        <a href="#" class="list-group-item list-group-item-action">${data.nombre}</a>
+                                        <li class="list-group-item list-group-item-action">${data.nombre}</li>
                                     </div>
         `;
     }
