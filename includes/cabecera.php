@@ -40,11 +40,11 @@
                                 </a>
 
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="http://localhost/web-site-ods-hcj/paginas/pagina1.php">Pagina #1</a>
-                                    <a class="dropdown-item" href="#">Pagina #2 </a>
-                                    <a class="dropdown-item" href="#">Pagina #3 </a>
+                                    <a class="dropdown-item" href="paginas/pagina1.php">Pagina #1</a>
+                                    <a class="dropdown-item" href="paginas/pagina2.php">Pagina #2-Esquema bd</a>
+                                    <a class="dropdown-item" href="paginas/pagina3.php">Pagina #3-Petroleo</a>
                                     <a class="dropdown-item" href="Contacto.php">Pagina #4-Contacto</a>
-                                    <a class="dropdown-item" href="#">Pagina #5 </a>
+                                    <a class="dropdown-item" href="paginas/espania.php">Pagina #5 - consultas</a>
                                     <a class="dropdown-item" href="#">Pagina #6 </a>
                                     <a class="dropdown-item" href="#">Pagina #7 </a>
                                     <a class="dropdown-item" href="paginas/8suscripcion.php">Pagina #8-Suscripción</a>
