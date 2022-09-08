@@ -162,8 +162,6 @@ class Estudiantes extends conexion
     }
 
 
-
-
     private function eliminarAlumnos()
     {
 

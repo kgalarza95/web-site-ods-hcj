@@ -1,8 +1,5 @@
 let idTabla = 0;
 
-
-
-
 const btnEnviar = document.getElementById('btn-enviar');
 const btnActualizar = document.getElementById('btn-actualializar');
 const btnEliminar = document.getElementById('btn-eliminar');
@@ -16,8 +13,6 @@ btnEnviar.addEventListener('click', async (e) => {
     const apellidos = document.getElementsByName('apellidos')[0].value;
 
     url = 'http://localhost/web-site-ods-hcj/php/controller/estudiantes.php';
-
-    console.log(JSON.stringify({ codigo, dni, nombres, apellidos }));
 
     const data = await fetch(url, {
         method: 'POST',
@@ -97,7 +92,7 @@ function llenarTabla(tabla, filas) {
             $(this).removeClass('selected');
         } else {
             let cellData = $('#' + tabla).DataTable().row($(this)).data();
-            // $('body').loading();
+
             idTabla = cellData.ID;
 
             $("#btn-enviar").hide();
@@ -109,8 +104,6 @@ function llenarTabla(tabla, filas) {
             document.getElementById('nombres').value = cellData.NOMBRES;
             document.getElementById('apellidos').value = cellData.APELLIDOS;
 
-
-            //$('body').loading('stop');
         }
 
     });
@@ -125,8 +118,6 @@ btnActualizar.addEventListener('click', async (e) => {
     const apellidos = document.getElementsByName('apellidos')[0].value;
 
     url = 'http://localhost/web-site-ods-hcj/php/controller/estudiantes.php';
-
-    console.log(JSON.stringify({ idTabla, codigo, dni, nombres, apellidos }));
 
     const data = await fetch(url, {
         method: 'PUT',
@@ -160,8 +151,6 @@ btnEliminar.addEventListener('click', async (e) => {
 
 
     url = 'http://localhost/web-site-ods-hcj/php/controller/estudiantes.php';
-
-    console.log(JSON.stringify({ idTabla }));
 
     const data = await fetch(url, {
         method: 'DELETE',
