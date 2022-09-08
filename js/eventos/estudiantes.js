@@ -12,7 +12,7 @@ btnEnviar.addEventListener('click', async (e) => {
     const nombres = document.getElementsByName('nombres')[0].value;
     const apellidos = document.getElementsByName('apellidos')[0].value;
 
-    url = 'http://localhost/web-site-ods-hcj/php/controller/estudiantes.php';
+    url = '../php/controller/estudiantes.php';
 
     const data = await fetch(url, {
         method: 'POST',
@@ -37,7 +37,7 @@ btnEnviar.addEventListener('click', async (e) => {
 });
 
 const getData = async () => {
-    const data = await fetch('http://localhost/web-site-ods-hcj/php/controller/estudiantes.php?page=1');
+   const data = await fetch('../php/controller/estudiantes.php?page=1');
     if (data.status === 200) {
         const datos = await data.json();
         console.log(datos);
@@ -117,7 +117,7 @@ btnActualizar.addEventListener('click', async (e) => {
     const nombres = document.getElementsByName('nombres')[0].value;
     const apellidos = document.getElementsByName('apellidos')[0].value;
 
-    url = 'http://localhost/web-site-ods-hcj/php/controller/estudiantes.php';
+    url = '../php/controller/estudiantes.php';
 
     const data = await fetch(url, {
         method: 'PUT',
@@ -150,7 +150,7 @@ btnEliminar.addEventListener('click', async (e) => {
     e.preventDefault();
 
 
-    url = 'http://localhost/web-site-ods-hcj/php/controller/estudiantes.php';
+    url = '../php/controller/estudiantes.php';
 
     const data = await fetch(url, {
         method: 'DELETE',

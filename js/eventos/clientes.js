@@ -13,7 +13,7 @@ btnEnviar.addEventListener('click', async (e) => {
     const email = document.getElementsByName('email')[0].value;
     const telefono = document.getElementsByName('telefono')[0].value;
 
-    url = 'http://localhost/web-site-ods-hcj/php/controller/clientes.php';
+    url = 'php/controller/clientes.php';
 
     console.log(JSON.stringify({ nombre, email, telefono }));
 
@@ -39,7 +39,7 @@ btnEnviar.addEventListener('click', async (e) => {
 });
 
 const getData = async () => {
-    const data = await fetch('http://localhost/web-site-ods-hcj/php/controller/clientes.php?page=1');
+    const data = await fetch('php/controller/clientes.php?page=1');
     if (data.status === 200) {
         const datos = await data.json();
         renderData(datos);

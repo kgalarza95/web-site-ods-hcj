@@ -13,7 +13,7 @@ btnEnviar.addEventListener('click', async (e) => {
     const telefono = document.getElementsByName('telefono')[0].value;
     const mensaje = document.getElementsByName('mensaje')[0].value;
 
-    url = 'http://localhost/web-site-ods-hcj/php/controller/contacto.php';
+    url = 'php/controller/contacto.php';
 
     const data = await fetch(url, {
         method: 'POST',

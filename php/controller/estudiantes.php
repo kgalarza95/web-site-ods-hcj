@@ -8,7 +8,6 @@ $_respuestas = new respuestas;
 $_estudiantes = new Estudiantes;
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-
     if (isset($_GET["page"])) {
         $pagina = $_GET["page"];
         $listarEstudiante = $_estudiantes->listarAlumno($pagina);
