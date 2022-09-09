@@ -11,11 +11,14 @@ include "php/sesion.php";
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/icono.png">
-
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    
   <link rel="stylesheet" href="fonts/icomoon/style.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 
+ 
 </head>
 
 <body>
@@ -57,7 +60,7 @@ include "php/sesion.php";
       <div class="container">
         <div class="row">
 
-          <div class="col-md-12 col-lg-8 mb-5">
+          <div class="col-sm-6 col-lg-6 mb-5">
 
 
 
@@ -79,7 +82,7 @@ include "php/sesion.php";
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="font-weight-bold" for="telefono">Telefono</label>
-                  <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Telefono" maxlength="15"  onkeypress=' return soloNumeros(event)'>
+                  <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Telefono" maxlength="15" onkeypress=' return soloNumeros(event)'>
                 </div>
               </div>
 
@@ -118,6 +121,25 @@ include "php/sesion.php";
 
               </div>
             </div>
+          </div>
+
+          <div class="col-sm-6">
+            <h1 class="mb-3 my-4 text-center">
+              Información de
+              <strong class="letra-negra font-weight-bold">Contacto </strong>
+            </h1>
+
+            <table id="tblDatos" class="table table-striped table-bordered" style="width: 100%">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>NOMBRES</th>
+                  <th>EMAIL</th>
+                  <th>TELEFONO</th>
+                  <th>MENSAJE</th>
+                </tr>
+              </thead>
+            </table>
           </div>
         </div>
       </div>
@@ -206,6 +228,13 @@ include "php/sesion.php";
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
       <script src="js/form.js"></script>
       <script src="js/eventos/contactanos.js"></script>
+
+      <script src="../js/lib/jquery-3.6.1.min.js"></script>
+
+      <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+      <script src="../js/eventos/contato.js"></script>
+
+     
     </footer>
 
 </body>

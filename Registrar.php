@@ -42,8 +42,8 @@ include "php/sesion.php";
 
                             <div class="row form-group">
                                 <div class="col-md-12 mb-3 mb-md-0">
-                                    <label class="font-weight-bold" for="telefono">Telefono</label>
-                                    <input type="text" id="telefono" name="telefono" class="form-control" placeholder="TelefTelefono" onkeypress='return soloNumeros(event)'>
+                                    <label class="font-weight-bold" for="telefono">Teléfono</label>
+                                    <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Teléfono" onkeypress='return soloNumeros(event)'>
                                 </div>
                             </div>
 

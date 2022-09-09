@@ -11,6 +11,7 @@ include "../php/sesion2.php";
     <title>Contacto</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    
     <?php include('../includes/head2.php') ?>
 </head>
 
@@ -20,7 +21,7 @@ include "../php/sesion2.php";
     <section class="container mt-5">
         <article class="row">
 
-            <div class="col-md-12">
+            <div class="col-sm-6">
                 <h1 class="mb-3 my-4 text-center">
                     Información de 
                     <strong class="letra-negra font-weight-bold">Contacto </strong>
