@@ -12,6 +12,25 @@ class Contacto extends conexion
     private $telefono = "";
     private $mensaje = "";
     
+    public function listarContacto($pagina = 1)
+    {
+        $inicio = 0;
+        $cantidad = 10;
+
+        if ($pagina > 1) {
+            $inicio = $cantidad * ($pagina - 1) + 1;
+            $cantidad = $cantidad * $pagina;
+        }
+        
+        $query = "SELECT * FROM TBL_CONTACTO";
+        //print_r($query);
+        $datos = parent::getData($query);
+        return $datos;
+    }
+
+
+
+
    
     public function post($json)
     {

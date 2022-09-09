@@ -1,7 +1,8 @@
+
 let idTabla = 0;
 
 const getData = async () => {
-    const data = await fetch('../php/controller/ods.php?page=1');
+    const data = await fetch('../php/controller/contacto.php?page=1');
     if (data.status === 200) {
         const datos = await data.json();
         console.log(datos);
@@ -31,10 +32,10 @@ function llenarTabla(tabla, filas) {
         data: filas,
         columns: [
             { data: 'ID' },
-            { data: 'CODIGO' },
-            { data: 'Ambito_VAR_Flow' },
-            { data: 'ODS' },
-            { data: 'NOMBRE_ODS' }
+            { data: 'NOMBRES' },
+            { data: 'EMAIL' },
+            { data: 'TELEFONO' },
+            { data: 'MENSAJE' }
         ],
         columnDefs: [{
             targets: [0], //OCULTAR COLUMNAS

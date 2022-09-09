@@ -7,9 +7,19 @@ require_once "../config/respuesta.class.php";
 $_respuestas = new respuestas;
 $_contacto = new Contacto;
 
-echo "llega al php";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+
+  if (isset($_GET["page"])) {
+      $pagina = $_GET["page"];
+      $listarContacto = $_contacto->listarContacto($pagina);
+      header("Content-Type: application/json");
+      echo json_encode($listarContacto);
+      http_response_code(200);
+  }
+}
+else if ($_SERVER["REQUEST_METHOD"] == "POST") {
   #recibir los datos enviados
   $postBody = file_get_contents("php://input");
   #enviamos los datos al manejador

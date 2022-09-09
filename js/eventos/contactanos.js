@@ -1,8 +1,6 @@
 const btnEnviar = document.getElementById('btn-enviar');
 
-telefono.addEventListener('click', (e) => {
 
-})
 
 
 btnEnviar.addEventListener('click', async (e) => {
@@ -36,3 +34,4 @@ btnEnviar.addEventListener('click', async (e) => {
         alert(' error al guardar');
     }
 });
+
