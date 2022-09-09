@@ -69,7 +69,7 @@ include "php/sesion.php";
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="font-weight-bold" for="nombre">Nombre</label>
-                  <input type="text" name="nombre" class="form-control" placeholder="Nombre" onkeypress='return soloLetras(event)'>
+                  <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre" onkeypress='return soloLetras(event)'>
                 </div>
               </div>
               <div class="row form-group">
@@ -229,10 +229,10 @@ include "php/sesion.php";
       <script src="js/form.js"></script>
       <script src="js/eventos/contactanos.js"></script>
 
-      <script src="../js/lib/jquery-3.6.1.min.js"></script>
+      <script src="js/lib/jquery-3.6.1.min.js"></script>
 
       <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
-      <script src="../js/eventos/contato.js"></script>
+      <!-- <script src="../js/eventos/contato.js"></script> -->
 
      
     </footer>

@@ -815,3 +815,12 @@ JOIN TBL_PAIS P ON P.ID = I.ID_PAIS;
 
 ##parte ppantalla 5
 select * from datos_espania;
+
+CREATE TABLE tbl_estudiantes (
+  ID int(11) NOT NULL,
+  CODIGO varchar(80) ,
+  CEDULA varchar(15) ,
+  NOMBRES varchar(200) ,
+  APELLIDOS varchar(200),
+  PRIMARY KEY (ID),
+)
