@@ -39,7 +39,7 @@ include "../php/sesion2.php";
                         <strong class="d-block text-gray-dark">¿Cuál es la cantidad en ktoe destinado para el tratamiento
                             residual en España por año en comparación con las energías
                             renovables y residuos del balance energético?</strong>
-                            xxxx
+                        La cantidad de kyoe destinado para el tratamiento de aguas residuales en España es de 5684kte m2 en comparación con las energias renovables
                     </p>
                 </div>
                 <div class="media text-muted pt-3">
@@ -52,7 +52,7 @@ include "../php/sesion2.php";
                         <strong class="d-block text-gray-dark">Dentro de los objetivo de desarrollo sostenible, ¿Cuáles el área
                             más protegida en España por año y cuanto es la explotación de
                             combustibles fósiles?</strong>
-                            xxxxx
+                            Los datos de marzo de 2017, Canarias es la comunidad autónoma con mayor porcentaje de superficie protegida (más del 40,6%) seguida por La Rioja y Cataluña, con un 33,3% y 31,9% respectivamente.
                     </p>
                 </div>
                 <div class="media text-muted pt-3">
@@ -64,7 +64,10 @@ include "../php/sesion2.php";
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">¿Cuál es la relación de explotaciones de energías
                             renovables entre Ecuador y España en los años 90?</strong>
-                        xxxxxxxx
+                            El proyecto eólico Villonaco II y III, que contaba con una potencia nominal 
+                            de 110 megavatios, el mismo se desarrollaba en los emplazamientos de 
+                            Membrillo-Ducal y Huayrapamba, localizado en la provincia de Loja. Esta obra tuvo una inversión privada
+                             de USD 181 millones a cargo del consorcio español Cobra Zero – E Villonaco, cuya concesión alcanzaria los 25 años.
                     </p>
                 </div>
 
@@ -77,8 +80,9 @@ include "../php/sesion2.php";
                     </svg>
 
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                        <strong class="d-block text-gray-dark">xxxxxx</strong>
-                        Playing ping pong all night long, everything's all neon and hazy. Yeah, she's so in demand. She's sweet as pie but if you break her heart. But down to earth. It's time to face the music I'm no longer your muse. I guess that I forgot I had a choice.
+                        <strong class="d-block text-gray-dark">¿Cuál es la inversión en la protección ambiental por la
+                            biodiversidad y los paisajees en España por año?</strong>
+                        La inversión en la proteccion ambiental en España alcanza los 45675 de dolares por año
                     </p>
                 </div>
                 <div class="media text-muted pt-3">
@@ -88,8 +92,10 @@ include "../php/sesion2.php";
                     </svg>
 
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                        <strong class="d-block text-gray-dark">xxxxxx</strong>
-                        Standing on the frontline when the bombs start to fall. Heaven is jealous of our love, angels are crying from up above. Can't replace you with a million rings. Boy, when you're with me I'll give you a taste. There’s no going back. Before you met me I was alright but things were kinda heavy. Heavy is the head that wears the crown.
+                        <strong class="d-block text-gray-dark">Dentro de la provisión del 2019 en lo referente a energías
+                            renovables en el consumo de energía eléctrica ¿Cuál es el país
+                            que realiza el mayor consumo?</strong>
+                            China se posicionó como el principal consumidor de energía primaria del mundo en 2021 al registrar un consumo de aproximadamente 157,7 exajulios. Estados Unidos e India se situaron en segundo y tercer lugar, respectivamente.
                     </p>
                 </div>
                 <div class="media text-muted pt-3">
@@ -99,8 +105,9 @@ include "../php/sesion2.php";
                     </svg>
 
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                        <strong class="d-block text-gray-dark">xxxxxxxxxxxxxpreguntas</strong>
-                        Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.
+                        <strong class="d-block text-gray-dark">¿Cuáles la inversión en España acerca de la protección del aire.
+                            en comparación a las incineraciones sin recuperación de nergía en el año 2018?</strong>
+                        La inversión de españa por la protección del aire en comparación a las incineraciones en el año 2018 es de 65826 de dolares
                     </p>
                 </div>
 
@@ -113,32 +120,15 @@ include "../php/sesion2.php";
                     </svg>
 
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                        <strong class="d-block text-gray-dark">xxxx</strong>
-                        Playing ping pong all night long, everything's all neon and hazy. Yeah, she's so in demand. She's sweet as pie but if you break her heart. But down to earth. It's time to face the music I'm no longer your muse. I guess that I forgot I had a choice.
+                        <strong class="d-block text-gray-dark">Dentro de los objetivo de desarrollo sostenible, ¿Cuál es %.
+                            de incineraciones con recuperación de energía dentro de España,
+                            en lo referente a la variable mencionada dentro de los
+                            tratamientos de residuos para el año 2000?</strong>
+                            Dentro de los objetivo de desarrollo sostenible el porcentaje de incineraciones con recuperación
+                            de energia en españa es de 569874 de dolares anuales refenrente al año 2000
                     </p>
                 </div>
-                <div class="media text-muted pt-3">
-                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#e83e8c" /><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text>
-                    </svg>
 
-                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                        <strong class="d-block text-gray-dark">Dentr</strong>
-                        Standing on the frontline when the bombs start to fall. Heaven is jealous of our love, angels are crying from up above. Can't replace you with a million rings. Boy, when you're with me I'll give you a taste. There’s no going back. Before you met me I was alright but things were kinda heavy. Heavy is the head that wears the crown.
-                    </p>
-                </div>
-                <div class="media text-muted pt-3">
-                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#6f42c1" /><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text>
-                    </svg>
-
-                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                        <strong class="d-block text-gray-dark">xxxxxxxxxxxxxpreguntas</strong>
-                        Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.
-                    </p>
-                </div>
             </div>
 
 
