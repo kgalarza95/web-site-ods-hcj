@@ -20,7 +20,7 @@ include "../php/sesion2.php";
     <section class="container mt-5">
         <main role="main" class="container">
             <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
-                <img class="mr-3" src="../assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
+                <img class="mr-3" src="../images/bannerUg.png" alt="" >
                 <div class="lh-100">
                     <h6 class="mb-0 text-white lh-100">Bootstrap</h6>
                     <small>Since 2011</small>
@@ -28,7 +28,7 @@ include "../php/sesion2.php";
             </div>
 
             <div class="my-3 p-3 bg-white rounded shadow-sm">
-                <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
+                <h6 class="border-bottom border-gray pb-2 mb-0">Preguntas</h6>
                 <div class="media text-muted pt-3">
                     <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title>

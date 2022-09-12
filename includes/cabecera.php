@@ -40,18 +40,18 @@
                                 </a>
 
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="paginas/pagina1.php">Pagina #1</a>
-                                    <a class="dropdown-item" href="paginas/pagina2.php">Pagina #2-Esquema bd</a>
-                                    <a class="dropdown-item" href="paginas/pagina3.php">Pagina #3-Petroleo</a>
-                                    <a class="dropdown-item" href="Contacto.php">Pagina #4-Contacto</a>
-                                    <a class="dropdown-item" href="paginas/espania.php">Pagina #5 - consultas</a>
-                                    <a class="dropdown-item" href="paginas/preguntas.php">Pagina #6 </a>
-                                    <a class="dropdown-item" href="paginas/ambitos.php">Pagina #7 </a>
-                                    <a class="dropdown-item" href="paginas/8suscripcion.php">Pagina #8-Suscripción</a>
-                                    <a class="dropdown-item" href="Servicios.php">Pagina #9-Las ODS</a>
-                                    <a class="dropdown-item" href="informacion.php">Pagina #10-Información</a>
-                                    <a class="dropdown-item" href="paginas/ods.php">Pagina #11</a>
-                                    <a class="dropdown-item" href="paginas/pais.php">Pagina #12</a>
+                                    <a class="dropdown-item" href="paginas/pagina1.php">Estudiantes</a>
+                                    <a class="dropdown-item" href="paginas/pagina2.php">Esquema bd</a>
+                                    <a class="dropdown-item" href="paginas/pagina3.php">Petroleo</a>
+                                    <a class="dropdown-item" href="Contacto.php">Contacto</a>
+                                    <a class="dropdown-item" href="paginas/espania.php">consultas</a>
+                                    <a class="dropdown-item" href="paginas/preguntas.php">Preguntas</a>
+                                    <a class="dropdown-item" href="paginas/ambitos.php">Ambitos</a>
+                                    <a class="dropdown-item" href="paginas/8suscripcion.php">Suscripción</a>
+                                    <a class="dropdown-item" href="Servicios.php">Servicios</a>
+                                    <a class="dropdown-item" href="informacion.php">Información</a>
+                                    <a class="dropdown-item" href="paginas/ods.php">Las ODS</a>
+                                    <a class="dropdown-item" href="paginas/pais.php">Paises</a>
                                 </div>
                             </div>
                         </h2>

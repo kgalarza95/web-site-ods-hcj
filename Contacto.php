@@ -105,22 +105,6 @@ include "php/sesion.php";
             </form>
 
 
-            <div class="col-lg-4">
-              <div class="p-4 mb-3 bg-white">
-                <h3 class="h5 letra-negra mb-3">Informacion de Contacto</h3>
-                <p class="mb-0 font-weight-bold">Direccion</p>
-                <p class="mb-4">Victor Manuel Rendón,
-                  Guayaquil 090313</p>
-
-                <p class="mb-0 font-weight-bold">Telefono</p>
-                <p class="mb-4"><a href="#">+593 985396241</a></p>
-
-                <p class="mb-0 font-weight-bold">Email</p>
-                <p class="mb-0"><a href="#">
-                    correo.ug.cambiar@ug.edu.ec</a></p>
-
-              </div>
-            </div>
           </div>
 
           <div class="col-sm-6">
