@@ -49,7 +49,7 @@
                                           <a class="dropdown-item" href="../paginas/ambitos.php">ambitos</a>
                                           <a class="dropdown-item" href="8suscripcion.php">Suscripción</a>
                                           <a class="dropdown-item" href="../Servicios.php">Servicios</a>
-                                          <a class="dropdown-item" href="../informacion.php">-Información</a>
+                                          <a class="dropdown-item" href="../informacion.php">Información</a>
                                           <a class="dropdown-item" href="../paginas/ods.php">Ods</a>
                                           <a class="dropdown-item" href="../paginas/pais.php">Paises</a>
                                       </div>
