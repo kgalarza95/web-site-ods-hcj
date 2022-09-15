@@ -8,7 +8,6 @@ CREATE TABLE IF NOT EXISTS TBL_USUARIO (
   PRIMARY KEY (ID)
 );
 
-##DROP TABLE TBL_CONTACTO;
 CREATE TABLE TBL_CONTACTO(
   ID INT(11) NOT NULL AUTO_INCREMENT,
   NOMBRES VARCHAR(100),
@@ -18,10 +17,8 @@ CREATE TABLE TBL_CONTACTO(
   PRIMARY KEY (ID)
 );
 
-
 INSERT INTO TBL_USUARIO (NOMBRE_USUARIO, CONTRASENIA) VALUES('ADMIN','123');
 INSERT INTO TBL_USUARIO (NOMBRE_USUARIO, CONTRASENIA) VALUES('admin','123');
-SELECT * FROM TBL_USUARIO WHERE NOMBRE_USUARIO = 'KGALARZA' AND CONTRASENIA = '1234';
 
 
 ## CREACION DE TABLA PARA PAISES drop table TBL_PAIS
@@ -308,7 +305,6 @@ INSERT INTO TBL_ODS(Objetivo, Nombre, Descripción) VALUES('15','Vida de ecosist
 INSERT INTO TBL_ODS(Objetivo, Nombre, Descripción) VALUES('16','Paz, justicia e instituciones sólidas'	,'Acceso universal a la justicia y la construcción de instituciones responsables y eficaces a todos los niveles.');
 INSERT INTO TBL_ODS(Objetivo, Nombre, Descripción) VALUES('17','Alianzas para lograr los objetivos'	,'Revitalizar la Alianza Mundial para el Desarrollo Sostenible.');
 
-## CREACION DE TABLA Ambito_VAR_Flow_ODS Codigo	Ambito_VAR_Flow	ODS principal
 CREATE TABLE TBL_Ambito_VAR_Flow_ODS(
    ID              INT(11) NOT NULL AUTO_INCREMENT
   ,Codigo          VARCHAR(80) 
@@ -370,7 +366,6 @@ INSERT INTO TBL_Ambito_VAR_Flow_ODS(Codigo, Ambito_VAR_Flow, ODS) VALUES('TPA_PC
 
 /*********************************************/
 
-
 CREATE TABLE tbl_clientes(
   id INT(11) NOT NULL AUTO_INCREMENT,
   nombre VARCHAR(200),
@@ -401,9 +396,7 @@ CREATE TABLE TBL_PETROLEO_INF(
   ANIO      VARCHAR(6),
   PRIMARY KEY (ID)
 );
-##SELECT * FROM TBL_PAIS WHERE ID IN (57,12,45,179,31);
-##INSERT DE PAGINA 3
-##ECUADOR
+
 INSERT INTO TBL_PETROLEO_INF(ID_PAIS, VENTA, MES, ANIO) VALUES(57, 5000, '01', '2020');
 INSERT INTO TBL_PETROLEO_INF(ID_PAIS, VENTA, MES, ANIO) VALUES(57, 1200, '02', '2020');
 INSERT INTO TBL_PETROLEO_INF(ID_PAIS, VENTA, MES, ANIO) VALUES(57, 8000, '03', '2020');
@@ -782,38 +775,8 @@ INSERT INTO datos_espania (Periodo,Sector,Tipo,Ambito,Andalucia,Aragon,Asturias,
 INSERT INTO datos_espania (Periodo,Sector,Tipo,Ambito,Andalucia,Aragon,Asturias,Balears,Canarias,Cantabria,Castilla_Leon,Castilla_La_Mancha,Catalunia,Comunitat_Valenciana,Extremadura,Galicia,Madrid,Murcia,Navarra,Pais_Vasco,Rioja,Total_nacional) VALUES ('            2009', 'C. Industria manufacturera', '    INVERSIÓN EN EQUIPOS E INSTALACIONES INTEGRADOS', '        Otras actividades de protección ambiental', '2,706,417', '5,765,489', '2,573,304', '16,015', '453,942', '1,231,768', '4,699,275', '2,812,288', '13,357,921', '21,913,587', '595,253', '2,666,215', '3,874,038', '1,745,234', '4,941,096', '6,500,483', '592,139', '76,444,464');
 INSERT INTO datos_espania (Periodo,Sector,Tipo,Ambito,Andalucia,Aragon,Asturias,Balears,Canarias,Cantabria,Castilla_Leon,Castilla_La_Mancha,Catalunia,Comunitat_Valenciana,Extremadura,Galicia,Madrid,Murcia,Navarra,Pais_Vasco,Rioja,Total_nacional) VALUES ('            2008', 'C. Industria manufacturera', '    INVERSIÓN EN EQUIPOS E INSTALACIONES INTEGRADOS', '        Otras actividades de protección ambiental', '16,978,771', '2,911,460', '914,987', '6,311', '1,515,873', '1,345,114', '14,831,409', '1,710,170', '16,604,355', '12,726,862', '165,000', '4,136,666', '2,298,678', '688,727', '1,868,507', '10,687,435', '103,117', '89,493,442');
 
---
 insert into tbl_suscripcion(NOMBRES,APELLIDOS,  CORREO) values("kevin","galata","vargas");
-##select * from tbl_suscripcion;
-/*
-SET SQL_SAFE_UPDATES = 0;
-delete from tbl_suscripcion;
-*/
-/*57 ECUADOR
-12 ARGENTINA
-45 COLOMBIA
-179 PERU
-31 BRASIL*/
 
-/*SELECT * FROM TBL_CONTACTO;
-SELECT * FROM TBL_PAIS;
-SELECT * FROM TBL_ODS;
-SELECT * FROM TBL_USUARIO;
-SELECT * FROM TBL_Ambito_VAR_Flow_ODS;
-SELECT * FROM tbl_clientes;
-
-SELECT A.ID, A.CODIGO, A.Ambito_VAR_Flow, A.ODS, O.NOMBRE AS NOMBRE_ODS
-FROM TBL_Ambito_VAR_Flow_ODS A
-JOIN TBL_ODS O ON O.ID = A.ODS;*/
-
-/*
-##PANTALLA 3
-SELECT I.ID, P.NOMBRE, I.VENTA, I.MES, I.ANIO
-FROM TBL_PETROLEO_INF I
-JOIN TBL_PAIS P ON P.ID = I.ID_PAIS;
-
-##parte ppantalla 5
-select * from datos_espania;*/
 
 CREATE TABLE tbl_estudiantes (
   ID int(11) NOT NULL,

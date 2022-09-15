@@ -18,16 +18,10 @@ session_destroy();
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
-
 </head>
 
 <body>
-    <?php
-    $usuario = "";
-    if (isset($_COOKIE['username'])) {
-        $usuario = $_COOKIE['nombre'];
-    }
-    ?>
+  
     <form action="" class="p-5 bg-white" id='registrar' method="POST">
         <div style='margin-left:25%; '>
             <h1><b>SISTEMA PARCIAL 2 - UG</b></h1>
@@ -35,7 +29,7 @@ session_destroy();
             <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <label class="font-weight-bold" for="username">Usuario</label>
-                    <input type="text" id="username" name="username" class="form-control" placeholder="Usuario" value="<?php echo $usuario; ?>">
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Usuario" >
                 </div>
             </div>
 
@@ -48,23 +42,22 @@ session_destroy();
 
             <div c lass="row form-group">
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary pill px-4 py-2">Iniciar Sesión</button>
-                    <!-- <input type="submit" value="Ingresar"> -->
-                    <!-- <button type="submit" class="btn btn-primary pill px-4 py-2" onclick='login()'>Iniciar Sesión</button> -->
+                    <button type="submit" class="btn btn-primary pill px-4 py-2">Regístrarse</button>
                 </div>
             </div>
 
             <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <label class="font-weight-bold" for="password">¿No tienes una cuenta?</label>
-                    <a type="url" href="registro_user.php" class="register">Regístrese</a>
+                    <label class="font-weight-bold" for="password">¿Tienes una cuenta?</label>
+                    <a type="url" href="login.php" class="register">Iniciar Sesión</a>
                 </div>
             </div>
     </form>
+    
     <?php
     if (isset($_POST['username']) && isset($_POST['password'])) {
         require_once "php/config/conexion.php";
-        require_once "php/login.php";
+        require_once "php/registrarse.php";
     }
     ?>
     </div>

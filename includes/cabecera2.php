@@ -40,14 +40,14 @@
                                       </a>
 
                                       <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="paginas/pagina1.p../hp">Estudiantes</a>
+                                          <a class="dropdown-item" href="../paginas/pagina1.php">Estudiantes</a>
                                           <a class="dropdown-item" href="../paginas/pagina2.php">Esquema bd</a>
                                           <a class="dropdown-item" href="../paginas/pagina3.php">Petroleo</a>
                                           <a class="dropdown-item" href="../Contacto.php">Contacto</a>
                                           <a class="dropdown-item" href="../paginas/espania.php">consultas</a>
                                           <a class="dropdown-item" href="../paginas/preguntas.php">preguntas</a>
                                           <a class="dropdown-item" href="../paginas/ambitos.php">ambitos</a>
-                                          <a class="dropdown-item" href="8suscripcion.php">Suscripción</a>
+                                          <a class="dropdown-item" href="../paginas/8suscripcion.php">Suscripción</a>
                                           <a class="dropdown-item" href="../Servicios.php">Servicios</a>
                                           <a class="dropdown-item" href="../informacion.php">Información</a>
                                           <a class="dropdown-item" href="../paginas/ods.php">Ods</a>
