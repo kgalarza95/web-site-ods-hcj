@@ -39,8 +39,8 @@ class Estudiantes extends conexion
     /*********************************************** */
 
 
-    public function post($json)
-    {
+    public function post($json) {
+        echo $json;
         $_respuestas = new respuestas;
         $datos = json_decode($json, true);
         if (!isset($datos["nombres"]) || !isset($datos["codigo"])) {
@@ -69,7 +69,7 @@ class Estudiantes extends conexion
 
     private function insertarContacto()
     {
-        $query = "INSERT INTO $this->tabla(CODIGO, CEDULA, NOMBRES, APELLIDOS) VALUES (:codigo, :cedula, :nombre, :apellidos)";
+        $query = "INSERT INTO tbl_estudiantes(CODIGO, CEDULA, NOMBRES, APELLIDOS) VALUES (:codigo, :cedula, :nombre, :apellidos)";
 
         $datosInsert = array(':codigo' => $this->codigo, ':cedula' => $this->cedula, ':nombre' => $this->nombre, ':apellidos' => $this->apellidos);
 
@@ -85,8 +85,7 @@ class Estudiantes extends conexion
     /********************************************** */
 
 
-    public function put($json)
-    {
+    public function put($json){
         $_respuestas = new respuestas;
         $datos = json_decode($json, true);
         if (!isset($datos["idTabla"]) || !isset($datos["nombres"]) || !isset($datos["codigo"])) {
