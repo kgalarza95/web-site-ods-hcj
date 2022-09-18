@@ -46,7 +46,7 @@ include "../php/sesion2.php";
             <span class="text-muted">Your cart</span>
             <span class="badge badge-secondary badge-pill">3</span>
           </h4>
-          <ul class="list-group mb-3" id="datos" >
+          <ul class="list-group mb-3" id="datos">
             <!--  -->
             <!--  -->
           </ul>
@@ -55,7 +55,7 @@ include "../php/sesion2.php";
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Promo code">
               <div class="input-group-append">
-                <button type="submit" class="btn btn-secondary">Redeem</button>
+                <button type="submit" class="btn btn-secondary"></button>
               </div>
             </div>
           </form>
@@ -68,13 +68,15 @@ include "../php/sesion2.php";
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="txt_nombres">Nombres</label>
-                <input type="text" class="form-control" id="txt_nombres" name="txt_nombres" required>
+                <input type="text" class="form-control" 
+                id="txt_nombres" name="txt_nombres" required onkeypress='return soloLetras(event)' maxlength="40">
 
               </div>
 
               <div class="col-md-6 mb-3">
                 <label for="txt_apellidos">Apellidos</label>
-                <input type="text" class="form-control" id="txt_apellidos" name="txt_apellidos" required>
+                <input type="text" class="form-control" id="txt_apellidos" 
+                name="txt_apellidos" required onkeypress='return soloLetras(event)' maxlength="40">
 
               </div>
             </div>
@@ -85,7 +87,7 @@ include "../php/sesion2.php";
                 <div class="input-group-prepend">
                   <span class="input-group-text">@</span>
                 </div>
-                <input type="text" class="form-control" id="txt_correo" placeholder="Correo" required>
+                <input type="text" class="form-control" id="txt_correo" name="txt_correo" placeholder="Correo" required maxlength="80">
 
               </div>
             </div>
@@ -93,7 +95,7 @@ include "../php/sesion2.php";
 
             <div class="mb-3">
               <label for="txt_direccion">Dirección</label>
-              <input type="text" class="form-control" id="txt_direccion" placeholder="Colinas Mz312, vll. 17" required>
+              <input type="text" class="form-control" name="txt_direccion" placeholder="Colinas Mz312, vll. 17" required maxlength="80">
 
             </div>
 
@@ -112,25 +114,27 @@ include "../php/sesion2.php";
 
             <div class="row">
               <div class="col-md-5 mb-3">
-                <label for="country">Country</label>
-                <select class="custom-select d-block w-100" id="country" required>
-                  <option value="">Choose...</option>
-                  <option>United States</option>
+                <label for="country">Pais</label>
+                <select class="custom-select d-block w-100" id="ciudad" name="ciudad" required>
+                  <option value="Ecuador">Ecuador</option>
                 </select>
 
               </div>
               <div class="col-md-4 mb-3">
-                <label for="state">State</label>
-                <select class="custom-select d-block w-100" id="state" required>
-                  <option value="">Choose...</option>
-                  <option>California</option>
+                <label for="state">Ciudad</label>
+                <select class="custom-select d-block w-100" id="pais" name="pais" required>
+                  <option value="Guayaquil">Guayaquil</option>
+                  <option value="Quito">Quito</option>
+                  <option value="Cuenca">Cuenca</option>
+                  <option value="Esmeraldas">Esmeraldas</option>
+                  <option value="Manabi">Manabi</option>
                 </select>
               </div>
 
             </div>
             <hr class="mb-4">
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="chk_inf_energia">
+              <input type="checkbox" class="custom-control-input" id="chk_inf_energia" name="chk_inf_energia">
               <label class="custom-control-label" for="chk_inf_energia">Información del consumo energético</label>
             </div>
             <div class="custom-control custom-checkbox">
@@ -178,7 +182,8 @@ include "../php/sesion2.php";
 
     <hr>
     <?php include('../includes/pie2.php') ?>
-<script src="../js/eventos/suscripcion.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/eventos/suscripcion.js"></script>
 
 </body>
 

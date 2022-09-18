@@ -12,15 +12,21 @@ class Suscripcion extends conexion{
     private $nombre = "";
     private $apellido = "";
     private $email = "";
-    private $telefono = "";
+    private $direccion = "";
+    private $sexo = "";
+    private $pais = "";
+    private $energetico = "";
+    private $tipo = "";
 
-    
+
     public function insertarRegistro() {
         //insert into tbl_suscripcion(NOMBRES,APELLIDOS,  CORREO) values("kevin","galarza","vera");
-        $query = "INSERT INTO $this->tabla(NOMBRES, APELLIDOS,  CORREO)
-                    VALUES (:nombre, :apellido, :email)";
+        $query = "INSERT INTO $this->tabla(NOMBRES, APELLIDOS,  CORREO, DIRECCION)
+                    VALUES (:nombre, :apellido, :email, :direccion)";
 
-        $datosInsert = array(':nombre' => $this->nombre, ':email' => $this->email, ':apellido' => $this->apellido);
+        $datosInsert = array(':nombre' => $this->nombre, ':email' => $this->email, 
+        ':apellido' => $this->apellido,
+        ':direccion' => $this->direccion);
 
         $resp = parent::noQueryId($query, $datosInsert);
 
@@ -56,14 +62,19 @@ class Suscripcion extends conexion{
         return $datos = parent::getData($query);
     }
 
+    
 
-
+    /**
+     * Get the value of tabla
+     */
     public function getTabla()
     {
         return $this->tabla;
     }
 
-    
+    /**
+     * Set the value of tabla
+     */
     public function setTabla($tabla): self
     {
         $this->tabla = $tabla;
@@ -71,13 +82,17 @@ class Suscripcion extends conexion{
         return $this;
     }
 
-    
+    /**
+     * Get the value of id
+     */
     public function getId()
     {
         return $this->id;
     }
 
-    
+    /**
+     * Set the value of id
+     */
     public function setId($id): self
     {
         $this->id = $id;
@@ -85,13 +100,17 @@ class Suscripcion extends conexion{
         return $this;
     }
 
-    
+    /**
+     * Get the value of nombre
+     */
     public function getNombre()
     {
         return $this->nombre;
     }
 
-    
+    /**
+     * Set the value of nombre
+     */
     public function setNombre($nombre): self
     {
         $this->nombre = $nombre;
@@ -99,13 +118,17 @@ class Suscripcion extends conexion{
         return $this;
     }
 
-    
+    /**
+     * Get the value of apellido
+     */
     public function getApellido()
     {
         return $this->apellido;
     }
 
-   
+    /**
+     * Set the value of apellido
+     */
     public function setApellido($apellido): self
     {
         $this->apellido = $apellido;
@@ -113,13 +136,17 @@ class Suscripcion extends conexion{
         return $this;
     }
 
-    
+    /**
+     * Get the value of email
+     */
     public function getEmail()
     {
         return $this->email;
     }
 
-    
+    /**
+     * Set the value of email
+     */
     public function setEmail($email): self
     {
         $this->email = $email;
@@ -127,16 +154,92 @@ class Suscripcion extends conexion{
         return $this;
     }
 
-    
-    public function getTelefono()
+    /**
+     * Get the value of direccion
+     */
+    public function getDireccion()
     {
-        return $this->telefono;
+        return $this->direccion;
     }
 
-    
-    public function setTelefono($telefono): self
+    /**
+     * Set the value of direccion
+     */
+    public function setDireccion($direccion): self
     {
-        $this->telefono = $telefono;
+        $this->direccion = $direccion;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of sexo
+     */
+    public function getSexo()
+    {
+        return $this->sexo;
+    }
+
+    /**
+     * Set the value of sexo
+     */
+    public function setSexo($sexo): self
+    {
+        $this->sexo = $sexo;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of pais
+     */
+    public function getPais()
+    {
+        return $this->pais;
+    }
+
+    /**
+     * Set the value of pais
+     */
+    public function setPais($pais): self
+    {
+        $this->pais = $pais;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of energetico
+     */
+    public function getEnergetico()
+    {
+        return $this->energetico;
+    }
+
+    /**
+     * Set the value of energetico
+     */
+    public function setEnergetico($energetico): self
+    {
+        $this->energetico = $energetico;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of tipo
+     */
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
+
+    /**
+     * Set the value of tipo
+     */
+    public function setTipo($tipo): self
+    {
+        $this->tipo = $tipo;
 
         return $this;
     }

@@ -777,9 +777,10 @@ INSERT INTO datos_espania (Periodo,Sector,Tipo,Ambito,Andalucia,Aragon,Asturias,
 
 insert into tbl_suscripcion(NOMBRES,APELLIDOS,  CORREO) values("kevin","galata","vargas");
 
-
+##USE UG_BASE_PHP;
+##drop table tbl_estudiantes;
 CREATE TABLE tbl_estudiantes (
-  ID int(11) NOT NULL,
+  ID int(11) NOT NULL AUTO_INCREMENT,
   CODIGO varchar(80) ,
   CEDULA varchar(15) ,
   NOMBRES varchar(200) ,

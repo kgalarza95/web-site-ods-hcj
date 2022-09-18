@@ -22,10 +22,10 @@ include "../php/sesion2.php";
                 <h1> Registro de alumnos </h1>
                 <form action="#" method="POST">
 
-                    <input type="text" class="form-control mb-3" name="codigo" id="codigo" placeholder="cod estudiante">
-                    <input type="text" class="form-control mb-3" name="dni" id="dni" placeholder="cedula">
-                    <input type="text" class="form-control mb-3" name="nombres" id="nombres" placeholder="Nombres">
-                    <input type="text" class="form-control mb-3" name="apellidos" id="apellidos" placeholder="Apellidos">
+                    <input type="text" class="form-control mb-3" name="codigo" id="codigo" placeholder="cod estudiante"  onkeypress=' return soloNumeros(event)' maxlength="5">
+                    <input type="text" class="form-control mb-3" name="dni" id="dni" placeholder="cedula" onkeypress=' return soloNumeros(event)' maxlength="10">
+                    <input type="text" class="form-control mb-3" name="nombres" id="nombres" placeholder="Nombres" onkeypress='return soloLetras(event)'>
+                    <input type="text" class="form-control mb-3" name="apellidos" id="apellidos" placeholder="Apellidos" onkeypress='return soloLetras(event)'>
 
                     <input type="submit" id="btn-enviar" class="btn btn-primary">
                     <input type="submit" id="btn-actualializar" class="btn btn-secondary" value="Actualizar">
@@ -53,8 +53,8 @@ include "../php/sesion2.php";
     <?php include('../includes/pie2.php') ?>
     <script src="../js/lib/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
-
-    <script src="../js/eventos/estudiantes.js"></script>
+    <script src="js/form.js"></script>
+    <script src="../js/eventos/estudiantes.js?v=1"></script>
 </body>
 
 </html>
