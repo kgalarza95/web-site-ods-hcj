@@ -16,6 +16,10 @@
 		session_start();
 		$fila=$consulta->fetch();
 		$_SESSION['Nombre']=$fila['NOMBRE_USUARIO'];
+		//creacion de la cookie
+		setcookie("usuario",$usuario, time() - 84600);
+		setcookie("usuario",$usuario, time() + 84600);
+		
 		header("Location: index.php");
 	}else{
 		echo "ERROR los datos no son correctos";

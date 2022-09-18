@@ -161,6 +161,7 @@ btnEliminar.addEventListener('click', async (e) => {
         body: JSON.stringify({ idTabla })
     });
 
+
     if (data.status == 200) {
         alert('exito al eliminar')
         $("#btn-enviar").show();

@@ -86,7 +86,16 @@
                                     <li><a href="Nosotros.php">Nosotros</a></li>
                                     <li><a href="Contacto.php">Contacto</a></li>
                                     <li><a href="Registrar.php">Registrarse</a></li>
-                                    <li><a href="login.php">Cerrar Sesión</a></li>
+                                    <li>
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                            <?php echo $_COOKIE["usuario"]; ?>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="login.php">Cerrar Sesión</a>
+                                        </div>
+                                    </li>
+                                    <!--  -->
                                 </ul>
                             </div>
                         </nav>
