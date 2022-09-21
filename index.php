@@ -1,5 +1,12 @@
 <?php
-	include "php/sesion.php";
+include "php/sesion.php";
+
+if (isset($_REQUEST['politica-cookies'])) {
+    $caducidad = time() + (60 * 60 * 24 * 365);
+    setcookie('politica', 'true', $caducidad);
+}
+
+setcookie('politica', 'true', time() - 36000);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +22,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="css/cookies.css" />
 </head>
 
 <body>
@@ -23,7 +30,7 @@
 
         <?php include('includes/cabecera.php') ?>
 
-      
+
 
         <!-- carrusel de imagenes -->
         <div id="crr_imagenes" class="carousel slide" data-ride="carousel">
@@ -478,6 +485,20 @@
 
     </section>
 
+    <div class="aviso-cookies" id="aviso-cookies">
+        <h3 class="titulo">
+            Alerta de Cookies
+        </h3>
+        <p class="parrafo">
+            Esta web utiliza cookies propias y de terceros para su correcto funcionamiento y para fines analíticos. Al hacer clic en "Aceptar", usted consiente el uso de estas tecnologías y el procesamiento de los datos. No obstante, puede visitar la "Configuración de Cookies" para ajustar parámetros.
+        </p>
+        <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+        <a class="enlace" href="nuestrascookies.php" target="_blank">Información de Nuestras Cookies</a>
+    </div>
+    <div id="fondo-aviso-cookies" class="fondo-aviso-cookies" ></div>
+
+
+    <script src="js/eventos/cookies.js"></script>
     <?php include('includes/pie.php') ?>
 </body>
 

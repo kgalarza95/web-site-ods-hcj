@@ -816,7 +816,7 @@ JOIN TBL_PAIS P ON P.ID = I.ID_PAIS;
 select * from datos_espania;*/
 
 CREATE TABLE tbl_estudiantes (
-  ID int(11) NOT NULL,
+  ID int(11) NOT NULL AUTO_INCREMENT,
   CODIGO varchar(80) ,
   CEDULA varchar(15) ,
   NOMBRES varchar(200) ,

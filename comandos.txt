@@ -7,6 +7,7 @@ git branch -M "main"
 git remote add origin https://github.com/kgalarza95/web-site-ods-hcj.git
 git push -u origin "main"
 
+##git push -u origin mastero git push -u origin --all
 
 
 

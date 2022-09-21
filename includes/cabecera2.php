@@ -40,6 +40,7 @@
                                       </a>
 
                                       <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="../dashboard.php">Dashboard</a>
                                           <a class="dropdown-item" href="../paginas/pagina1.php">Estudiantes</a>
                                           <a class="dropdown-item" href="../paginas/pagina2.php">Esquema bd</a>
                                           <a class="dropdown-item" href="../paginas/pagina3.php">Petroleo</a>
